@@ -9,59 +9,79 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Rubik', 'Arial';
+    font-size: 5vmin;
 }
 
 #moneyContainer {
-    width: 50vw;
+    width: 80vmin;
     display: flex;
     flex-direction: column;
     background: #333;
-    border-radius: 2vh;
-    padding: 2vh 2vh 0 2vh;
+    border-radius: 3vmin;
+    padding: 4vmin 4vmin 0 4vmin;
     color: #FFF;
 }
 
 .playerMoney {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2vh;
+    margin-bottom: 4vmin;
 }
 
 .titleMoney {
     display: flex;
     align-items: center;
-    font-size: 2vh;
+    font-size: 6vmin;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
 }
 
 .titleMoney img {
-    margin-right: 1vh;
+    margin-right: 2vmin;
+    width: 10vmin;
 }
 
 .buttonsContainer {
     display: flex;
-    margin-top: .5vh;
+    justify-content: space-between;
+    margin-top: 1vmin;
     background: #FFF;
-    border-radius: 1vh;
-    padding: 1vh;
+    border-radius: 100vmax;
+    padding: 2vmin;
+    color: #333;
+}
+
+.buttonsContainer div {
+    display: flex;
+    align-items: center;
 }
 
 .buttonsContainer img {
     background: #FFF;
     box-shadow: 0 0 .5vh black;
-    border-radius: 100vh;
-    padding: .5vh;
-    width: 4vh;
-    margin-right: 1vh;
+    border-radius: 100vmax;
+    padding: 1vmin;
+    width: 8vmin;
+    margin-right: 1vmin;
 }
 
 .button_add:hover {
-    background: #0F0;
+    background: #8F8;
 }
 .button_buy:hover {
-    background: #F00;
+    background: #F88;
 }
 .button_sell:hover {
-    background: #00F;
+    background: #88F;
+}
+
+.currency_amount {
+    display: flex;
+    justify-content: flex-end;
+    background: #FFF;
+    box-shadow: 0 0 .5vh black;
+    border-radius: 100vmax;
+    min-width: 10vmin;
+    padding: 0 4vmin;
 }
