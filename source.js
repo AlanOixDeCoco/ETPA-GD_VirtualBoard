@@ -1,6 +1,6 @@
 const ADD_AMOUNT = 1;
 const BUY_AMOUNT = 2;
-const SELL_AMOUNT = 1;
+const BID_AMOUNT = 1;
 
 let playersCurrency = [2, 2, 2, 2];
 
@@ -15,7 +15,7 @@ Array.from(buttonsContainerList).forEach((buttonsContainer) => {
         RemoveCurrency(index, BUY_AMOUNT);
     };
     buttonsContainer.getElementsByClassName("button_sell")[0].onclick = () => {
-        AddCurrency(index, SELL_AMOUNT);
+        RemoveCurrency(index, BID_AMOUNT);
     };
 
     RefreshCurrency(playerIndex);
